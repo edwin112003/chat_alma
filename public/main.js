@@ -16,7 +16,6 @@ enviar.addEventListener('click', ()=>{
     }else if(mensaje.value != ''){
         socket.emit('nuevo mensaje', objMss);
         mensaje.value = '';
-        persona.value = '';
     }else{
         alert('Escribe algo en mensaje plocs ):');
     }

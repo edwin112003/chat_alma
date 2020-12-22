@@ -12,12 +12,12 @@ enviar.addEventListener('click', ()=>{
     }
     console.log(objMss);
     if(persona.value == ''){
-        alert('Escribe tu nombre plocs');
+        alert('Escribe tu nombre');
     }else if(mensaje.value != ''){
         socket.emit('nuevo mensaje', objMss);
         mensaje.value = '';
     }else{
-        alert('Escribe algo en mensaje plocs ):');
+        alert('Escribe algo en mensaje ):');
     }
 
 });
